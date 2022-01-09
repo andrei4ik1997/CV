@@ -4,43 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/adaptiv.css" />
     <script src="https://kit.fontawesome.com/d054066f81.js" crossorigin="anonymous"></script>
-    <title>My CV</title>
+    <title>Andrei Shynkarev CV</title>
   </head>
   <body>
     <main class="content">
       <article class="article block about article__about">
-        <div class="wrapper">
-          <section class="about__image">
+        <section class="info about__info">
+          <figure class="about__image">
             <img class="about__image-photo" src="./src/my_photo.png" alt="My photo" />
-          </section>
-          <section class="info about__info">
-            <h2 class="info__title">andrei shynkarou</h2>
-            <p class="info__subtitle">web developer</p>
-            <p class="info__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est culpa earum mollitia suscipit quaerat molestiae.
-              Minus, sit. Mollitia, quaerat laborum! Minus eligendi, obcaecati repellendus nulla eaque illo. Error, ipsa earum.
-            </p>
-          </section>
-        </div>
+          </figure>
+          <h3 class="info__title">andrei shynkarou</h3>
+          <small class="info__subtitle">web developer</small>
+          <p class="info__description">
+            Hi, my name is Andrei Shynkarev. I am begginer Front End Developer from Belarus. I am 24 years old. Graduated from
+            BSUIR. I also successfully completed the courses at the Academy Step in the direction of front-end development. I also
+            graduated from the training Epam "Front-End Development". On courses from the DataMola company I want to strengthen my
+            knowledge in javascript and the Angular framework.
+          </p>
+        </section>
 
         <section class="contacts about__contacts">
-          <table class="contacts__table">
-            <thead>
-              <tr>
-                <th>Location</th>
-                <th>Phone</th>
-                <th>Email</th>
-                <th>Github</th>
+          <table class="table contacts__table">
+            <thead class="table__header">
+              <tr class="table__header-row">
+                <th class="table__header-cell">Location</th>
+                <th class="table__header-cell">Phone</th>
+                <th class="table__header-cell">Email</th>
+                <th class="table__header-cell">Github</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Mogilev</td>
-                <td>+375297476003</td>
-                <td>andrey03071997@yandex.ru</td>
-                <td><a href="https://github.com/andrei4ik1997" target="_blank">andrei4ik1997</a></td>
+            <tbody class="table__body">
+              <tr class="table__body-row">
+                <td class="table__body-data" aria-label="Location">Mogilev</td>
+                <td class="table__body-data" aria-label="Phone">+375297476003</td>
+                <td class="table__body-data" aria-label="Email">andrey03071997@yandex.ru</td>
+                <td class="table__body-data" aria-label="Github">
+                  <a class="table__body-data-link" href="https://github.com/andrei4ik1997" target="_blank">andrei4ik1997</a>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -48,35 +51,34 @@
       </article>
 
       <h2 class="article__title">skills</h2>
-
       <article class="article skills article__skills">
         <section class="block skills__professional">
-          <h3 class="skills__title">professional skills</h3>
+          <h3 class="skills__title skills__title_professional">professional skills</h3>
           <div class="skill skills__skill">
             <div class="skill__container">
-              <p class="skill__name"><i class="fab fa-html5"></i> HTML & CSS</p>
-              <p class="skill__value">90%</p>
+              <span class="skill__name"><i class="fab fa-html5"></i> HTML & CSS</span>
+              <span class="skill__value">90%</span>
             </div>
             <div class="skill__progress" style="--value: 90"></div>
           </div>
           <div class="skill skills__skill">
             <div class="skill__container">
-              <p class="skill__name"><i class="fab fa-js"></i> JavaScript</p>
-              <p class="skill__value">70%</p>
+              <span class="skill__name"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="skill__value">70%</span>
             </div>
             <div class="skill__progress" style="--value: 70"></div>
           </div>
           <div class="skill skills__skill">
             <div class="skill__container">
-              <p class="skill__name"><i class="fab fa-react"></i> React</p>
-              <p class="skill__value">40%</p>
+              <span class="skill__name"><i class="fab fa-react"></i> React</span>
+              <span class="skill__value">40%</span>
             </div>
             <div class="skill__progress" style="--value: 40"></div>
           </div>
           <div class="skill skills__skill">
             <div class="skill__container">
-              <p class="skill__name"><i class="fab fa-angular"></i> Angular</p>
-              <p class="skill__value">30%</p>
+              <span class="skill__name"><i class="fab fa-angular"></i> Angular</span>
+              <span class="skill__value">30%</span>
             </div>
             <div class="skill__progress" style="--value: 30"></div>
           </div>
@@ -86,60 +88,164 @@
           <div class="skills__additional-container">
             <div class="additional-skill skills__additional-skill">
               <div class="additional-skill__progress" style="--value: 90"></div>
-              <p class="additional-skill__name">Teamwork</p>
+              <span class="additional-skill__name">Teamwork</span>
             </div>
             <div class="additional-skill skills__additional-skill">
               <div class="additional-skill__progress" style="--value: 80"></div>
-              <p class="additional-skill__name">Sociability</p>
+              <span class="additional-skill__name">Sociability</span>
             </div>
             <div class="additional-skill skills__additional-skill">
               <div class="additional-skill__progress" style="--value: 40"></div>
-              <p class="additional-skill__name">English</p>
+              <span class="additional-skill__name">English</span>
             </div>
           </div>
         </section>
       </article>
 
-      <h2 class="article__title">education</h2>
+      <h2 class="article__title">interests</h2>
+      <article class="article interests article__interests">
+        <p class="interests__description">
+          In my free time I visit the gym. I also play volleyball. On the way, I like to listen to music with headphones. I also
+          prefer to watch new movies in the cinema. And of course coding.
+        </p>
+        <section class="interests__icons">
+          <div class="block interest interests__interest">
+            <i class="interest__icon fas fa-plane-departure fa-2x"></i>
+            <span class="interest__description">travel</span>
+          </div>
+          <div class="block interest interests__interest">
+            <i class="interest__icon fas fa-music fa-2x"></i>
+            <span class="interest__description">music</span>
+          </div>
+          <div class="block interest interests__interest">
+            <i class="interest__icon fas fa-gamepad fa-2x"></i>
+            <span class="interest__description">gaming</span>
+          </div>
+          <div class="block interest interests__interest">
+            <i class="interest__icon fas fa-volleyball-ball fa-2x"></i>
+            <span class="interest__description">volleyball</span>
+          </div>
+          <div class="block interest interests__interest">
+            <i class="interest__icon fas fa-film fa-2x"></i>
+            <span class="interest__description">movies</span>
+          </div>
+          <div class="block interest interests__interest">
+            <i class="interest__icon fas fa-shopping-cart fa-2x"></i>
+            <span class="interest__description">shopping</span>
+          </div>
+        </section>
+      </article>
 
+      <h2 class="article__title">experiance</h2>
+      <article class="article article__experiance">
+        <section class="experiance">
+          <time class="experiance__date">May 2020 - present</time>
+          <div class="info experiance__info">
+            <p class="info__position">system administrator</p>
+            <small class="info__place">mogilev custom</small>
+            <ul class="info__description">
+              <li class="info__description-item">installation and maintenance of servers, computers and office equipment;</li>
+              <li class="info__description-item">
+                installation and support of operating systems, office and anti-virus programs;
+              </li>
+              <li class="info__description-item">ensuring the security of corporate data of the company;</li>
+              <li class="info__description-item">installation and administration of Kaspersky Security Center;</li>
+              <li class="info__description-item">installation and administration of Manage Engine Desktop Central;</li>
+              <li class="info__description-item">installation and administration of the WSUS server;</li>
+              <li class="info__description-item">data backup (Veeam backup, Acronis backup);</li>
+              <li class="info__description-item">technical support for computer users;</li>
+              <li class="info__description-item">development of an internal site on Joomla;</li>
+            </ul>
+          </div>
+        </section>
+        <section class="experiance">
+          <time class="experiance__date">Nov 2018 - Nov 2019</time>
+          <div class="info experiance__info">
+            <p class="info__position">solder</p>
+            <small class="info__place">Belarus Ministry of Defence</small>
+            <ul class="info__description">
+              <li class="info__description-item">Urgent military service</li>
+            </ul>
+          </div>
+        </section>
+        <section class="experiance">
+          <time class="experiance__date">Aug 2018 - Nov 2018</time>
+          <div class="info experiance__info">
+            <p class="info__position">metrology engineer</p>
+            <small class="info__place">BelOMO</small>
+            <ul class="info__description">
+              <li class="info__description-item">Equipment verification</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <h2 class="article__title">education</h2>
       <article class="article education article__education">
         <section class="block education__item">
-          <h3 class="education__date">2021 - 2022</h3>
-          <p class="education__subtitle"><i class="education__icon fas fa-file-alt"></i>Front End / Angular</p>
-          <p class="education__subtitle"><i class="education__icon fas fa-university"></i>Epam trainee</p>
+          <time class="education__date">2021 - 2022</time>
+          <small class="education__subtitle"><i class="education__icon fas fa-file-alt"></i>Front End / Angular</small>
+          <small class="education__subtitle"><i class="education__icon fas fa-university"></i>Epam trainee</small>
           <p class="education__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti minus in quo, facere laboriosam eius magnam
-            harum exercitationem at, alias doloribus blanditiis quam cupiditate ut qui sapiente odio. Placeat!
+            Studied the basics of HTML, CSS and JavaScript and formed the skills of web page layout, taking into account modern
+            approaches and techniques in this direction. Using the Angular framework.
           </p>
         </section>
         <section class="block education__item">
-          <h3 class="education__date">2020 - 2021</h3>
-          <p class="education__subtitle"><i class="education__icon fas fa-file-alt"></i>Front End / React</p>
-          <p class="education__subtitle"><i class="education__icon fas fa-university"></i>Academy Step</p>
+          <time class="education__date">2020 - 2021</time>
+          <small class="education__subtitle"><i class="education__icon fas fa-file-alt"></i>Front End / React</small>
+          <small class="education__subtitle"><i class="education__icon fas fa-university"></i>Academy Step</small>
           <p class="education__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti minus in quo, facere laboriosam eius magnam
-            harum exercitationem at, alias doloribus blanditiis quam cupiditate ut qui sapiente odio. Placeat!
+            Designing HTML5 Web Pages Using CSS Cascading Style Sheets. Developing client-side scripts using JavaScript. Using the
+            React framework.
           </p>
         </section>
         <section class="block education__item">
-          <h3 class="education__date">2014 - 2018</h3>
-          <p class="education__subtitle"><i class="education__icon fas fa-file-alt"></i>Engineering</p>
-          <p class="education__subtitle"><i class="education__icon fas fa-university"></i>BSUIR</p>
+          <time class="education__date">2014 - 2018</time>
+          <small class="education__subtitle"><i class="education__icon fas fa-file-alt"></i>Engineering</small>
+          <small class="education__subtitle"><i class="education__icon fas fa-university"></i>BSUIR</small>
           <p class="education__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti minus in quo, facere laboriosam eius magnam
-            harum exercitationem at, alias doloribus blanditiis quam cupiditate ut qui sapiente odio. Placeat!
+            Disciplines of the natural sciences cycle, including mathematics, physics, chemistry, probability theory and
+            mathematical statistics. Basic theoretical knowledge and practical skills in analog and digital electronics, the
+            theory of automatic control and microprocessor technology.
           </p>
         </section>
         <section class="block education__item">
-          <h3 class="education__date">2003 - 2014</h3>
-          <p class="education__subtitle"><i class="education__icon fas fa-file-alt"></i>Basic knowledge</p>
-          <p class="education__subtitle"><i class="education__icon fas fa-university"></i>Secondary school</p>
-          <p class="education__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti minus in quo, facere laboriosam eius magnam
-            harum exercitationem at, alias doloribus blanditiis quam cupiditate ut qui sapiente odio. Placeat!
-          </p>
+          <time class="education__date">2003 - 2014</time>
+          <small class="education__subtitle"><i class="education__icon fas fa-file-alt"></i>Basic knowledge</small>
+          <small class="education__subtitle"><i class="education__icon fas fa-university"></i>Secondary school</small>
+          <p class="education__description">Basic theoretical knowledge in natural sciences.</p>
         </section>
       </article>
     </main>
+    <footer class="footer">
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a class="social-links__item-link" href="https://vk.com/id43767999" target="_blank">
+            <i class="social-links__item-icon fab fa-vk"></i>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__item-link" href="https://t.me/andrei4ik1997" target="_blank">
+            <i class="social-links__item-icon fab fa-telegram-plane"></i>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__item-link" href="https://linkedin.com/in/andrei-shynkarou-874425223" target="_blank">
+            <i class="social-links__item-icon fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__item-link" href="https://instagram.com/murzilka_97" target="_blank">
+            <i class="social-links__item-icon fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__item-link" href="https://github.com/andrei4ik1997" target="_blank">
+            <i class="social-links__item-icon fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,168 @@
+@media screen and (max-width: 1000px) {
+  .education__item {
+    padding: 1rem;
+  }
+  .education__date {
+    left: -40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .article__title {
+    margin: 2rem 0;
+  }
+  .article__skills {
+    margin-top: 3rem;
+  }
+  .skills__title_professional {
+    width: min-content;
+  }
+  .block {
+    padding: 1rem;
+  }
+  .skills__professional {
+    padding-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .table__header {
+    display: none;
+  }
+  .table__body-row {
+    display: block;
+  }
+  .table__body-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  .table__body-data:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+
+  .education__item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about__image {
+    width: 40%;
+  }
+  .skills__professional {
+    width: 50%;
+    margin-right: 1rem;
+  }
+  .skills__additional {
+    width: 50%;
+  }
+  .skills__title {
+    width: min-content;
+  }
+
+  .skills__additional-container {
+    justify-content: space-around;
+  }
+
+  .additional-skill {
+    width: 45%;
+    margin-top: 1.5rem;
+  }
+  .interests__icons {
+    justify-content: space-around;
+  }
+  .interests__interest {
+    flex-basis: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 18px;
+  }
+  .content {
+    padding: 2rem 5%;
+  }
+  .article__experiance::before {
+    left: 19.5vw;
+  }
+  .experiance__date::before {
+    left: 18.85vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills__title {
+    width: max-content;
+  }
+  .article__skills {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills__professional {
+    margin-right: 0;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .skills__additional {
+    width: 100%;
+  }
+  .additional-skill {
+    width: 30%;
+  }
+  .article__education {
+    margin-top: 3rem;
+  }
+  .education__item {
+    margin-bottom: 3rem;
+    width: 49%;
+  }
+
+  .education__date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    text-align: center;
+  }
+  .education__subtitle:first-of-type {
+    margin-top: 1.5rem;
+  }
+  .info__description-item {
+    margin-left: 1rem;
+  }
+  .experiance__date {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  * {
+    font-size: 16px;
+  }
+  .content {
+    padding: 1rem 3%;
+  }
+  .article__experiance::before {
+    left: 20.5vw;
+  }
+  .experiance__date::before {
+    left: 19.85vw;
+  }
+  .about__image {
+    width: 50%;
+  }
+  .info__title {
+    font-size: 1.1rem;
+  }
+  .education__subtitle {
+    font-size: 0.8rem;
+  }
+  .education__icon {
+    width: 20px;
+  }
+}
