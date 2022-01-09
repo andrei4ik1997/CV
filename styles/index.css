@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 20px;
+  color: black;
   --first-color: rgb(116, 116, 116);
   --second-color: rgb(1, 133, 205);
   --third-color: rgb(129, 133, 146);
@@ -11,10 +12,10 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: inherit;
+  color: black;
 }
 a:active {
-  color: inherit;
+  color: black;
 }
 a:hover,
 a > i:hover {
@@ -31,6 +32,7 @@ a > i:hover {
   height: max-content;
   padding: 2rem 10%;
   background-color: rgb(239, 239, 239);
+
 }
 
 .block {
@@ -218,7 +220,7 @@ a > i:hover {
 .education__date {
   position: relative;
   top: 0px;
-  left: -60px;
+  left: -3rem;
   display: block;
   min-width: 130px;
   padding: 1rem 0.5rem 1rem 30px;
@@ -235,7 +237,7 @@ a > i:hover {
 }
 
 .education__icon {
-  width: 30px;
+  width: 1.5rem;
 }
 
 .education__description {
