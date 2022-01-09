@@ -1,5 +1,7 @@
 # My CV
 
+## Live
+
 - Vercel: [My CV](https://cv-peach-phi.vercel.app/)
 
 ## Built with
